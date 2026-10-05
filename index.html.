@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>White Lord Sensi V1</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0b0b;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+      padding: 25px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      color: #aaa;
+      margin-bottom: 25px;
+    }
+
+    .card {
+      background: #171717;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 15px 0;
+      box-shadow: 0 0 15px rgba(255,255,255,0.08);
+    }
+
+    .setting {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid #333;
+    }
+
+    .setting:last-child {
+      border-bottom: none;
+    }
+
+    .value {
+      font-weight: bold;
+    }
+
+    button {
+      border: none;
+      padding: 14px 22px;
+      border-radius: 10px;
+      background: white;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    footer {
+      margin-top: 30px;
+      color: #777;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>🐉 WHITE LORD SENSI V1</h1>
+    <p class="subtitle">Brazilian-Style Free Fire Sensitivity</p>
+
+    <div class="card">
+      <h2>🎯 Sensitivity</h2>
+
+      <div class="setting">
+        <span>General</span>
+        <span class="value">190</span>
+      </div>
+
+      <div class="setting">
+        <span>Red Dot</span>
+        <span class="value">180</span>
+      </div>
+
+      <div class="setting">
+        <span>2X Scope</span>
+        <span class="value">170</span>
+      </div>
+
+      <div class="setting">
+        <span>4X Scope</span>
+        <span class="value">160</span>
+      </div>
+
+      <div class="setting">
+        <span>Sniper Scope</span>
+        <span class="value">100</span>
+      </div>
+
+      <div class="setting">
+        <span>Free Look</span>
+        <span class="value">180</span>
+      </div>
+
+      <button onclick="copySensi()">📋 Copy Sensi</button>
+    </div>
+
+    <div class="card">
+      <h2>📱 Device</h2>
+      <p><b>Tecno Pop 10</b></p>
+      <p>Brazilian-style setup</p>
+    </div>
+
+    <div class="card">
+      <h2>🎮 HUD</h2>
+      <p>Use a comfortable custom HUD and adjust the fire button size to your preference.</p>
+    </div>
+
+    <footer>
+      White Lord Sensi V1 • Free Fire
+    </footer>
+
+  </div>
+
+  <script>
+    function copySensi() {
+      const sensi =
+        "White Lord Sensi V1\n" +
+        "General: 190\n" +
+        "Red Dot: 180\n" +
+        "2X Scope: 170\n" +
+        "4X Scope: 160\n" +
+        "Sniper Scope: 100\n" +
+        "Free Look: 180";
+
+      navigator.clipboard.writeText(sensi);
+
+      alert("White Lord Sensi V1 copied!");
+    }
+  </script>
+
+</body>
+  </html>
